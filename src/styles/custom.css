@@ -5,3 +5,32 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.text-gradient {
+  background: linear-gradient(
+      to right,
+      black,
+      black,
+      black,
+      black,
+      black,
+      white,
+      black,
+      black,
+      black,
+      black,
+      black
+    )
+    0 0 / 500% 100%;
+  background-size: 500% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: ltr-gradient 10s infinite linear reverse;
+}
+
+@keyframes ltr-gradient {
+  to {
+    background-position: 500% 0;
+  }
+}
