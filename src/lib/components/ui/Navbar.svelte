@@ -11,7 +11,6 @@
 
   const pages: Page[] = [
     { name: "Home", route: "/", constant: true },
-    { name: "Settings", route: "/settings", constant: true },
     { name: "Socials", route: "/socials", constant: true },
     { name: "Projects", route: "/projects" },
     { name: "Blog", route: "/blog" },
