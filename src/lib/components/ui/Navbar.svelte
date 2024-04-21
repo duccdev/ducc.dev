@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import Logo from "$lib/components/icons/Logo.svelte";
+  import Link from "$lib/components/ui/Link.svelte";
 
   interface Page {
     name: string;
@@ -11,6 +12,7 @@
   const pages: Page[] = [
     { name: "Home", route: "/", constant: true },
     { name: "Settings", route: "/settings", constant: true },
+    { name: "Socials", route: "/socials", constant: true },
     { name: "Projects", route: "/projects" },
     { name: "Blog", route: "/blog" },
     { name: "Random", route: "/random" },
@@ -45,22 +47,19 @@
     <div class="flex items-center">
       {#each pages as page}
         {#if page.route === currentPage.route}
-          <a href={page.route} class="text-white cursor-pointer text-xl mr-4">
+          <a href={page.route} class="text-white text-xl mr-4">
             {page.name}
           </a>
         {:else}
-          <a
-            href={page.route}
-            class="text-ctp-green hover:text-ctp-teal cursor-pointer text-xl mr-4"
-          >
+          <Link href={page.route} class="text-xl mr-4">
             {page.name}
-          </a>
+          </Link>
         {/if}
       {/each}
     </div>
 
-    <a href="/" class="flex items-center cursor-pointer">
-      <Logo class="size-12 mr-3 rounded-lg" />
+    <a href="/" class="flex items-center select-none" draggable={false}>
+      <Logo class="size-12 mr-3 rounded-lg" draggable={false} />
 
       <div class="flex items-center text-center">
         <div class="relative mr-4 text-center">
