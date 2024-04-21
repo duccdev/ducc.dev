@@ -9,6 +9,8 @@
     constant?: boolean;
   }
 
+  const noPage = { name: "", route: "", constant: false };
+
   const pages: Page[] = [
     { name: "Home", route: "/", constant: true },
     { name: "Socials", route: "/socials", constant: true },
@@ -17,7 +19,7 @@
     { name: "Random", route: "/random" },
   ];
 
-  let currentPage: Page = { name: "", route: "", constant: false };
+  let currentPage: Page = noPage;
 
   onMount(() => {
     setInterval(() => {
@@ -35,6 +37,8 @@
           return;
         }
       }
+
+      currentPage = noPage;
     }, 15);
   });
 </script>
