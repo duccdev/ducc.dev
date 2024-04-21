@@ -1,9 +1,11 @@
 <script lang="ts">
   import Discord from "$lib/components/icons/Discord.svelte";
+  import YouTube from "$lib/components/icons/YouTube.svelte";
   import Link from "$lib/components/ui/Link.svelte";
   import Code from "$lib/components/ui/Code.svelte";
 
   let discordHovered = false;
+  let youtubeHovered = false;
 </script>
 
 <div class="absolute-center">
@@ -17,20 +19,45 @@
     <div>
       <!-- svelte-ignore a11y-no-static-element-interactions -->
       <div
-        class="flex items-center"
+        class="flex items-center mb-1"
         on:mouseenter={() => (discordHovered = true)}
         on:mouseleave={() => (discordHovered = false)}
       >
-        <Discord class="mr-2.5 size-10" />
+        <Discord class="mr-2.5 size-8" />
 
         <Link
           href="https://discord.com/channels/@me/842457844724400142"
-          class="text-2xl"
+          class="text-xl"
         >
           {#if discordHovered}
             <Code>amogustroll69</Code>
           {:else}
             Discord
+          {/if}
+        </Link>
+      </div>
+    </div>
+
+    <div>
+      <!-- svelte-ignore a11y-no-static-element-interactions -->
+      <div
+        class="flex items-center"
+        on:mouseenter={() => (youtubeHovered = true)}
+        on:mouseleave={() => (youtubeHovered = false)}
+      >
+        <YouTube class="mr-2.5 size-8" />
+
+        <Link
+          href="https://www.youtube.com/channel/UCxHXCBqIsIpb28kzg7oajDg"
+          class="text-xl"
+        >
+          {#if youtubeHovered}
+            <div class="flex items-center">
+              <Code class="mr-1">amogustroll69</Code>
+              <p class="text-lg">(i almost never post there)</p>
+            </div>
+          {:else}
+            YouTube
           {/if}
         </Link>
       </div>
