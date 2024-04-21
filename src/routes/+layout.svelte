@@ -4,4 +4,7 @@
 </script>
 
 <Navbar />
-<slot />
+
+<div class="mt-[150px]">
+  <slot />
+</div>
