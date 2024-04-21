@@ -34,3 +34,11 @@
     background-position: 500% 0;
   }
 }
+
+p {
+  @apply text-ctp-text;
+}
+
+a {
+  @apply cursor-pointer select-none;
+}

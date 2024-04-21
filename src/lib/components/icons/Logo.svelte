@@ -1,6 +1,7 @@
 <script lang="ts">
   let className = "";
-  export { className as class };
+  let draggable = true;
+  export { className as class, draggable };
 </script>
 
-<img src="/logo.png" draggable={false} class={className} alt="Logo" />
+<img src="/logo.png" class={className || "w-6 h-6"} alt="Logo" {draggable} />
