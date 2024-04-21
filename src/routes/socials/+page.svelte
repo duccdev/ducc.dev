@@ -63,6 +63,7 @@
       </div>
     </div>
 
-    <div class="border border-ctp-green w-full mt-4" />
+    <div class="border border-ctp-green w-full mt-4 mb-2" />
+    <p class="text-sm">yeah there isn't much here :/</p>
   </div>
 </div>
