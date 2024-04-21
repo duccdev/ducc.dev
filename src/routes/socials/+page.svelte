@@ -1,6 +1,7 @@
 <script lang="ts">
   import Discord from "$lib/components/icons/Discord.svelte";
   import Link from "$lib/components/ui/Link.svelte";
+  import Code from "$lib/components/ui/Code.svelte";
 
   let discordHovered = false;
 </script>
@@ -22,9 +23,12 @@
       >
         <Discord class="mr-2.5 size-10" />
 
-        <Link class="text-2xl">
+        <Link
+          href="https://discord.com/channels/@me/842457844724400142"
+          class="text-2xl"
+        >
           {#if discordHovered}
-            <code>amogustroll69</code>
+            <Code>amogustroll69</Code>
           {:else}
             Discord
           {/if}
