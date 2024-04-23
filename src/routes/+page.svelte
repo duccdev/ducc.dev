@@ -19,15 +19,14 @@
     </div>
 
     <div class="flex items-center mb-2">
-      <div class="mr-2 w-56 h-36 bg-ctp-mauve rounded-lg p-1.5">
+      <div class="mr-2 w-56 h-32 bg-ctp-mauve rounded-lg p-1.5">
         <p class="flex justify-center text-black">coding langs i know</p>
         <div class="border border-black w-full my-2" />
 
         <p class="text-black mb-4">c, c++, c#, java, js, ts, py, dart, rust</p>
-        <p class="text-black text-[12px]">i might add actual imgs later lol</p>
       </div>
 
-      <div class="w-56 h-36 bg-ctp-mauve rounded-lg p-1.5">
+      <div class="w-56 h-32 bg-ctp-mauve rounded-lg p-1.5">
         <p class="flex justify-center text-black">games that i play</p>
         <div class="border border-black w-full my-2" />
 
@@ -36,10 +35,9 @@
             href="/just-monika"
             class="text-ctp-green hover:text-ctp-green/70"
           >
-            <strong>ddlc</strong>
-          </a>, gmod
+            <strong>ddlc,</strong>
+          </a> gmod, apex, valorant
         </p>
-        <p class="text-black text-[12px]">i might add actual imgs later lol</p>
       </div>
     </div>
 
