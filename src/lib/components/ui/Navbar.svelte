@@ -16,7 +16,7 @@
     { name: "Socials", route: "/socials", constant: true },
     { name: "Projects", route: "/projects" },
     { name: "Blog", route: "/blog" },
-    { name: "Random", route: "/random" },
+    { name: "Friends", route: "/hall-of-fame", constant: true },
   ];
 
   let currentPage: Page = noPage;
