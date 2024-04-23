@@ -49,7 +49,10 @@
       >
         <YouTube class="mr-2.5 size-8" />
 
-        <Link href="https://github.com/amogustroll69" class="text-xl">
+        <Link
+          href="https://www.youtube.com/channel/UCxHXCBqIsIpb28kzg7oajDg"
+          class="text-xl"
+        >
           {#if youtubeHovered}
             <div class="flex items-center">
               <Code class="mr-1">amogustroll69</Code>
@@ -71,10 +74,7 @@
       >
         <GitHub class="mr-2.5 size-8" />
 
-        <Link
-          href="https://www.youtube.com/channel/UCxHXCBqIsIpb28kzg7oajDg"
-          class="text-xl"
-        >
+        <Link href="https://github.com/amogustroll69" class="text-xl">
           {#if githubHovered}
             <Code>amogustroll69</Code>
           {:else}
