@@ -1,5 +1,5 @@
 <script lang="ts">
-  import isMobile from "../../../utils/isMobile";
+  import isMobile from "$lib/utils/isMobile";
 </script>
 
 {#if !isMobile()}
