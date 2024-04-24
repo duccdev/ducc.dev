@@ -1,9 +1,9 @@
 <script lang="ts">
   import DesktopView from "$lib/components/ui/DesktopView.svelte";
   import MobileView from "$lib/components/ui/MobileView.svelte";
+  import GitHubDark from "$lib/components/icons/GitHubDark.svelte";
   import Discord from "$lib/components/icons/Discord.svelte";
   import YouTube from "$lib/components/icons/YouTube.svelte";
-  import GitHub from "$lib/components/icons/GitHub.svelte";
   import Link from "$lib/components/ui/Link.svelte";
   import Code from "$lib/components/ui/Code.svelte";
 
@@ -13,22 +13,26 @@
 </script>
 
 <DesktopView>
-  <div class="absolute-center">
+  <div class="absolute-center w-96">
     <div>
-      <div class="flex items-center">
-        <div class="border border-ctp-green w-48" />
-        <p class="text-ctp-green text-3xl mx-2">Socials</p>
-        <div class="border border-ctp-green w-48" />
+      <div class="flex justify-center mb-4">
+        <p class="text-ctp-green text-3xl">Socials</p>
       </div>
 
       <div>
         <!-- svelte-ignore a11y-no-static-element-interactions -->
         <div
-          class="flex items-center mb-1"
+          class="flex items-center mb-2"
           on:mouseenter={() => (discordHovered = true)}
           on:mouseleave={() => (discordHovered = false)}
         >
-          <Discord class="mr-2.5 size-8" />
+          <div class="relative mr-2.5">
+            <div
+              class="size-8 rounded-full bg-white bg-opacity-80 flex items-center justify-center"
+            >
+              <Discord class="size-5" />
+            </div>
+          </div>
 
           <Link
             href="https://discord.com/channels/@me/842457844724400142"
@@ -46,11 +50,17 @@
       <div>
         <!-- svelte-ignore a11y-no-static-element-interactions -->
         <div
-          class="flex items-center mb-1"
+          class="flex items-center mb-2"
           on:mouseenter={() => (youtubeHovered = true)}
           on:mouseleave={() => (youtubeHovered = false)}
         >
-          <YouTube class="mr-2.5 size-8" />
+          <div class="relative mr-2.5">
+            <div
+              class="size-8 rounded-full bg-white bg-opacity-80 flex items-center justify-center"
+            >
+              <YouTube class="size-5" />
+            </div>
+          </div>
 
           <Link
             href="https://www.youtube.com/channel/UCxHXCBqIsIpb28kzg7oajDg"
@@ -59,7 +69,7 @@
             {#if youtubeHovered}
               <div class="flex items-center">
                 <Code class="mr-1">amogustroll69</Code>
-                <p class="text-lg">(i almost never post there)</p>
+                <p class="text-lg">(i never post)</p>
               </div>
             {:else}
               YouTube
@@ -75,7 +85,13 @@
           on:mouseenter={() => (githubHovered = true)}
           on:mouseleave={() => (githubHovered = false)}
         >
-          <GitHub class="mr-2.5 size-8" />
+          <div class="relative mr-2.5">
+            <div
+              class="size-8 rounded-full bg-white bg-opacity-80 flex items-center justify-center"
+            >
+              <GitHubDark class="size-5" />
+            </div>
+          </div>
 
           <Link href="https://github.com/duccybaka" class="text-xl">
             {#if githubHovered}
@@ -86,9 +102,6 @@
           </Link>
         </div>
       </div>
-
-      <div class="border border-ctp-green w-full mt-4 mb-2" />
-      <p class="text-sm">yeah there isn't much here :/</p>
     </div>
   </div>
 </DesktopView>
@@ -137,7 +150,7 @@
       <div>
         <!-- svelte-ignore a11y-no-static-element-interactions -->
         <div class="flex items-center">
-          <GitHub class="mr-2.5 size-8" />
+          <GitHubDark class="mr-2.5 size-8" />
 
           <Link href="https://github.com/duccybaka" class="text-xl">
             <Code class="mb-2">duccybaka</Code>
