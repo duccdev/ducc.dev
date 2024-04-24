@@ -2,8 +2,8 @@
   import { onMount } from "svelte";
   import Logo from "$lib/components/icons/Logo.svelte";
   import Link from "$lib/components/ui/Link.svelte";
-  import DesktopView from "./DesktopView.svelte";
-  import MobileView from "./MobileView.svelte";
+  import DesktopView from "$lib/components/ui/DesktopView.svelte";
+  import MobileView from "$lib/components/ui/MobileView.svelte";
 
   interface Page {
     name: string;
