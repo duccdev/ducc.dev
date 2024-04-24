@@ -12,6 +12,8 @@
   let githubHovered = false;
 </script>
 
+<!-- this could be implemented so much cleaner but im lazy lol -->
+
 <DesktopView>
   <div class="absolute-center w-96">
     <div>
@@ -28,7 +30,7 @@
         >
           <div class="relative mr-2.5">
             <div
-              class="size-8 rounded-full bg-white bg-opacity-80 flex items-center justify-center"
+              class="size-8 rounded-full bg-white flex items-center justify-center"
             >
               <Discord class="size-5" />
             </div>
@@ -56,7 +58,7 @@
         >
           <div class="relative mr-2.5">
             <div
-              class="size-8 rounded-full bg-white bg-opacity-80 flex items-center justify-center"
+              class="size-8 rounded-full bg-white flex items-center justify-center"
             >
               <YouTube class="size-5" />
             </div>
@@ -87,7 +89,7 @@
         >
           <div class="relative mr-2.5">
             <div
-              class="size-8 rounded-full bg-white bg-opacity-80 flex items-center justify-center"
+              class="size-8 rounded-full bg-white flex items-center justify-center"
             >
               <GitHubDark class="size-5" />
             </div>
@@ -118,7 +120,13 @@
           on:mouseenter={() => (discordHovered = true)}
           on:mouseleave={() => (discordHovered = false)}
         >
-          <Discord class="mr-2.5 size-8" />
+          <div class="relative mr-2.5">
+            <div
+              class="size-8 rounded-full bg-white flex items-center justify-center"
+            >
+              <Discord class="size-5" />
+            </div>
+          </div>
 
           <Link
             href="https://discord.com/channels/@me/842457844724400142"
@@ -136,7 +144,13 @@
           on:mouseenter={() => (youtubeHovered = true)}
           on:mouseleave={() => (youtubeHovered = false)}
         >
-          <YouTube class="mr-2.5 size-8" />
+          <div class="relative mr-2.5">
+            <div
+              class="size-8 rounded-full bg-white flex items-center justify-center"
+            >
+              <YouTube class="size-5" />
+            </div>
+          </div>
 
           <Link
             href="https://www.youtube.com/channel/UCxHXCBqIsIpb28kzg7oajDg"
@@ -150,7 +164,13 @@
       <div>
         <!-- svelte-ignore a11y-no-static-element-interactions -->
         <div class="flex items-center">
-          <GitHubDark class="mr-2.5 size-8" />
+          <div class="relative mr-2.5">
+            <div
+              class="size-8 rounded-full bg-white flex items-center justify-center"
+            >
+              <GitHubDark class="size-5" />
+            </div>
+          </div>
 
           <Link href="https://github.com/duccybaka" class="text-xl">
             <Code class="mb-2">duccybaka</Code>
