@@ -111,7 +111,7 @@
 <MobileView>
   <div class="absolute-center">
     <div>
-      <p class="text-ctp-green text-3xl mb-2">Socials</p>
+      <p class="text-ctp-green text-3xl mb-4 flex justify-center">Socials</p>
 
       <div>
         <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -177,8 +177,6 @@
           </Link>
         </div>
       </div>
-
-      <p class="text-sm mt-4">yeah there isn't much here :/</p>
     </div>
   </div>
 </MobileView>
