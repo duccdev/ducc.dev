@@ -42,10 +42,10 @@ devDependencies:
     specifier: ^8.4.38
     version: 8.4.38
   prettier:
-    specifier: ^3.1.1
+    specifier: ^3.2.5
     version: 3.2.5
   prettier-plugin-svelte:
-    specifier: ^3.1.2
+    specifier: ^3.2.2
     version: 3.2.2(prettier@3.2.5)(svelte@4.2.12)
   svelte:
     specifier: ^4.2.7

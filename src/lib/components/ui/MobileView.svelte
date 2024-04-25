@@ -1,7 +1,7 @@
 <script lang="ts">
-  import isMobile from "$lib/utils/isMobile";
+	import isMobile from "$lib/utils/isMobile";
 </script>
 
 {#if isMobile()}
-  <slot />
+	<slot />
 {/if}
