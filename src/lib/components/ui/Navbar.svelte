@@ -71,15 +71,11 @@
 
 				<div class="flex items-center text-center">
 					<div class="relative mr-4 text-center">
-						<p
-							class="text-3xl blur-[10px] select-none text-gradient"
-						>
+						<p class="text-3xl blur-[10px] select-none text-gradient">
 							<strong>duccy baka</strong>
 						</p>
 
-						<p
-							class="absolute inset-0 z-10 text-3xl select-none text-gradient"
-						>
+						<p class="absolute inset-0 z-10 text-3xl select-none text-gradient">
 							<strong>duccy baka</strong>
 						</p>
 					</div>
@@ -93,9 +89,7 @@
 	<nav
 		class="z-50 flex justify-center items-center fixed left-1/2 top-4 transform -translate-x-1/2 w-[95%] rounded-xl border-2 border-[#383838] backdrop-filter backdrop-blur-[8px] bg-ctp-mauve bg-opacity-[5%]"
 	>
-		<div
-			class="flex items-center text-center justify-between w-full my-3 mx-3"
-		>
+		<div class="flex items-center text-center justify-between w-full my-3 mx-3">
 			<div class="flex items-center">
 				{#each pages as page}
 					{#if page.route === currentPage.route}

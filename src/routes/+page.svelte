@@ -23,14 +23,10 @@
 
 			<div class="flex items-center mb-2">
 				<div class="mr-2 w-56 h-32 bg-ctp-mauve rounded-lg p-1.5">
-					<p class="flex justify-center text-black">
-						coding langs i know
-					</p>
+					<p class="flex justify-center text-black">coding langs i know</p>
 					<div class="border border-black w-full my-2" />
 
-					<p class="text-black">
-						c, c++, c#, java, js, ts, py, dart, rust
-					</p>
+					<p class="text-black">c, c++, c#, java, js, ts, py, dart, rust</p>
 				</div>
 
 				<div class="w-56 h-32 bg-ctp-mauve rounded-lg p-1.5">
@@ -60,9 +56,7 @@
 				<p class="text-black mb-1">- webdev</p>
 				<p class="text-black mb-1">- mobile dev</p>
 				<p class="text-black mb-1">- lowlevel dev</p>
-				<p class="text-black">
-					- android/linux modding (i use arch btw)
-				</p>
+				<p class="text-black">- android/linux modding (i use arch btw)</p>
 			</div>
 		</div>
 	</div>
@@ -74,14 +68,10 @@
 			<p class="text-2xl text-ctp-green mb-4">hey there {">w<"}</p>
 
 			<div class="mb-2 w-56 bg-ctp-mauve rounded-lg p-1.5">
-				<p class="flex justify-center text-black">
-					coding langs i know
-				</p>
+				<p class="flex justify-center text-black">coding langs i know</p>
 				<div class="border border-black w-full my-2" />
 
-				<p class="text-black">
-					c, c++, c#, java, js, ts, py, dart, rust
-				</p>
+				<p class="text-black">c, c++, c#, java, js, ts, py, dart, rust</p>
 			</div>
 
 			<div class="mb-2 w-56 bg-ctp-mauve rounded-lg p-1.5">
@@ -103,8 +93,8 @@
 				<div class="border border-black w-full my-2" />
 
 				<p class="text-black">
-					ai/ml, gaming, killing projects, webdev, mobile dev,
-					lowlevel dev, i use arch btw
+					ai/ml, gaming, killing projects, webdev, mobile dev, lowlevel dev, i
+					use arch btw
 				</p>
 			</div>
 		</div>
