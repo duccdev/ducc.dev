@@ -18,7 +18,6 @@
 		{ name: "Socials", route: "/socials", constant: true },
 		{ name: "Projects", route: "/projects" },
 		{ name: "Blog", route: "/blog" },
-		{ name: "Friends", route: "/hall-of-fame", constant: true },
 	];
 
 	let currentPage: Page = noPage;
