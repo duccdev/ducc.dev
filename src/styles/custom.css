@@ -35,10 +35,6 @@
   }
 }
 
-p {
-  @apply text-ctp-text;
-}
-
 a {
   @apply cursor-pointer select-none;
 }
